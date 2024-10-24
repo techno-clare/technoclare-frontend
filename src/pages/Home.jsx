@@ -5,7 +5,6 @@ import heroimg from '../assets/bro.svg'
 import gradient from '../assets/gradient.svg'
 import Disc from '../assets/Disc.svg'
 import ContactForm from "../components/ContactForm/ContactForm";
-
 import Footer from "../components/Footer/Footer";
 
 const Home = () => {
