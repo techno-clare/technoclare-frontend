@@ -1,0 +1,154 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 40px;
+    background-color: #0e0e10;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contactContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1d;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  @media (min-width: 768px) {
+    .contactContent {
+      flex-direction: row;
+    }
+  }
+  
+  .textSection {
+    flex: 1;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .textSection h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+  
+  @media (min-width: 768px) {
+    .textSection {
+      text-align: left;
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+    .textSection h1 {
+      font-size: 4rem;
+    }
+  }
+  
+  .form {
+    flex: 1;
+    background-color: #1a1a1d;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #2a2a2d;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #5d5d61;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    height: 80px;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #9a9a9d;
+  }
+  
+  .submitBtn {
+    background-color: #ffa526;
+    color: #000;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .arrow {
+    margin-left: 10px;
+  }
+  
+  .submitBtn:hover {
+    background-color: #73feb4;
+  }
+  
+  /* Gradient Background on the Right */
+  .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background: linear-gradient(135deg, #0e0e10, #1a1a1d, #3d4451, #00f5a0);
+    z-index: 1;
+    opacity: 0.8;
+  }
+  
+  /* Top Left Corner Spotlight Effect */
+  .container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 900px;  /* Increased width for the spotlight */
+    height: 800px; /* Increased height for the spotlight */
+    background: radial-gradient(circle at top left, rgba(0, 245, 160, 0.8), rgba(14, 14, 16, 0) 80%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  /* Footer Bottom Styling */
+  .footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #1a1a1d;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .container::before,
+    .container::after {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
