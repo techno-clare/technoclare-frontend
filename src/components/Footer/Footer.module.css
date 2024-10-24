@@ -1,0 +1,134 @@
+.footer {
+    background-color: #121212;
+    color: #fff;
+    padding: 40px 30px;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .column {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px; /* Ensure columns wrap on small screens */
+  }
+  
+  .logoSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footerLogo {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .footerLinks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footerLinks li {
+    margin-bottom: 10px;
+  }
+  
+  .footerLinks a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footerLinks a:hover {
+    color: #00bcd4;
+  }
+  
+  .footerSubscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  .footerSubscribe input {
+    padding: 8px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+
+  .footerList {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .footerList li {
+    margin: 15px 0; /* Add space between items */
+  }
+  
+  .footerList li a {
+    font-size: 18px; /* Increase font size */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .footerList li a:hover {
+    color: #007bff; /* Change color on hover (customize as needed) */
+  }
+  
+  
+  .subscribeBtn {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .socialIcons a {
+    
+    margin-right: 20px;
+    color: #fff;
+  }
+  
+  .footerBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+  }
+  
+  .scrollUp {
+    color: #00bcd4;
+  }
+  
+  @media (max-width: 768px) {
+    .footerContent {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .column {
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footerLogo {
+      width: 40px;
+    }
+  
+    .footerSubscribe input {
+      width: 150px;
+    }
+  }
+  

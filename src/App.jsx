@@ -1,10 +1,20 @@
 import "./App.css";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import NavBar from "./components/Common/NavBar";
+import Home from "./pages/Home";
+
 
 function App() {
   return (
-    <>
-      <h1 className="text-sm font-bold underline ">Hello world!</h1>
-    </>
+    <div className="bg-richblack-10">
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+      {/* <TestimonialSlider /> */}
+    </div>
   );
 }
 
