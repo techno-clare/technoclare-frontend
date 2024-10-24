@@ -1,8 +1,9 @@
 import React from 'react'
-import { Navbarlinks } from '../../data/Navbar-Links'
+
 import logo from '../../assets/Logo.svg'
 import HighlightedText from '../HomePage.jsx/HighlightedText'
 import { Link, matchPath, useLocation } from 'react-router-dom'
+import { Navbarlinks } from "../../data/navbar-links";
 const NavBar = () => {
 
   const location = useLocation();
